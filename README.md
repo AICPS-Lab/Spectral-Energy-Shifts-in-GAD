@@ -1,12 +1,14 @@
 # Modeling Spectral Energy Shifts in Spatio-Temporal Graph Anomaly Detection
 
+**Accepted to ICML 2026 (the 43rd International Conference on Machine Learning)**
+
 This repository contains the official implementation of the paper:
 
 > **Modeling Spectral Energy Shifts in Spatio-Temporal Graph Anomaly Detection**
 >
 > Yilin Liu, Hongchao Zhang, Taylor T. Johnson, Ahmad F. Taha, Meiyi Ma
 >
-> *Proceedings of the 43rd International Conference on Machine Learning (ICML), 2026*
+> *Proceedings of the 43rd International Conference on Machine Learning (ICML), Seoul, South Korea. PMLR 306, 2026.*
 
 ## Overview
 
@@ -176,8 +178,7 @@ python f_train2.py --dataset msl --runs 10
 ## Citation
 
 ```bibtex
-@inproceedings{,
-  
+@inproceedings{
 }
 ```
 
