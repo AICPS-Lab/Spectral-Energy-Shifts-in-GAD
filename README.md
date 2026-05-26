@@ -8,7 +8,7 @@ This repository contains the official implementation of the paper:
 >
 > Yilin Liu, Hongchao Zhang, Taylor T. Johnson, Ahmad F. Taha, Meiyi Ma
 >
-> *Proceedings of the 43rd International Conference on Machine Learning (ICML), Seoul, South Korea. PMLR 306, 2026.*
+> *Proceedings of the 43rd International Conference on Machine Learning (ICML), Seoul, South Korea. 2026.*
 
 ## Overview
 
