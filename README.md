@@ -77,13 +77,7 @@ For GPU support, install the appropriate PyTorch and DGL versions for your CUDA 
 
 Amazon and YelpChi are downloaded automatically via DGL. T-Finance and T-Social require manual download from [GADBench](https://github.com/squareRoot3/GADBench).
 
-### Time-Series Datasets
 
-| Dataset | Domain | Channels | Samples | Anomaly Ratio |
-|---------|--------|-------:|---------:|--------------:|
-| SWaT | Water Treatment | 51 | 946,719 | 11.98% |
-| WADI | Water Distribution | 127 | 172,738 | 5.99% |
-| MSL | Spacecraft Telemetry | 55 | 132,046 | 10.72% |
 
 Time-series datasets should be placed under `./data/{dataset_name}/` with `train.csv`, `test.csv`, and `list.txt`. See [dataloader_semi.py](dataloader_semi.py) for expected formats and preprocessing instructions.
 
@@ -157,7 +151,7 @@ python f_train2.py --dataset msl --runs 10
 
 ## Results
 
-### Static Graph Datasets
+### Graph Anormaly Detection Result
 
 | Model | Amazon F1-m | YelpChi F1-m | T-Finance F1-m | T-Social F1-m |
 |-------|------:|------:|------:|------:|
@@ -166,14 +160,7 @@ python f_train2.py --dataset msl --runs 10
 | UniGAD | 90.46 | 71.23 | 89.34 | 78.67 |
 | **EGNN (Ours)** | **91.52** | **76.89** | **89.60** | **95.40** |
 
-### Time-Series Datasets
 
-| Model | MSL F1-m | SWaT F1-m | WADI F1-m | Avg. F1 | #Params |
-|-------|------:|------:|------:|------:|------:|
-| TranAD | 68.14 | 76.45 | 48.50 | 64.36 | 261K |
-| USAD | 63.71 | 71.52 | 48.35 | 61.19 | 1.28M |
-| GDN | 57.56 | 75.45 | 48.18 | 60.39 | 5K |
-| **EGNN (Ours)** | **70.50** | **86.03** | **61.41** | **72.65** | **54K** |
 
 ## Citation
 
