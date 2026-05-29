@@ -1,14 +1,10 @@
 # Modeling Spectral Energy Shifts in Spatio-Temporal Graph Anomaly Detection
 
-**Accepted to ICML 2026 (the 43rd International Conference on Machine Learning)**
+This repository contains the official implementation of the paper **Accepted to ICML 2026 (the 43rd International Conference on Machine Learning)**
 
-This repository contains the official implementation of the paper:
+> **[Modeling Spectral Energy Shifts in Spatio-Temporal Graph Anomaly Detection](https://openreview.net/pdf?id=sgNhWbqXfJ)** \
+> Yilin Liu, Hongchao Zhang, Ahmad Taha, Taylor T Johnson, Meiyi Ma 
 
-> **Modeling Spectral Energy Shifts in Spatio-Temporal Graph Anomaly Detection**
->
-> Yilin Liu, Hongchao Zhang, Taylor T. Johnson, Ahmad F. Taha, Meiyi Ma
->
-> *Proceedings of the 43rd International Conference on Machine Learning (ICML), Seoul, South Korea. 2026.*
 
 ## Overview
 
@@ -43,6 +39,7 @@ EGNN further extends to temporal graph settings without introducing specialized 
 ├── get_yelp.py           # YelpChi dataset loader
 ├── get_tfinance.py       # T-Finance dataset loader
 ├── get_tsocial.py        # T-Social dataset loader
+├── requirements.txt      # Python dependencies
 ├── LICENSE               # MIT License
 └── README.md
 ```
@@ -59,7 +56,7 @@ EGNN further extends to temporal graph settings without introducing specialized 
 - pandas
 
 ```bash
-pip install torch dgl numpy scikit-learn pandas
+pip install -r requirements.txt
 ```
 
 For GPU support, install the appropriate PyTorch and DGL versions for your CUDA version. See [PyTorch](https://pytorch.org/get-started/locally/) and [DGL](https://www.dgl.ai/pages/start.html) installation guides.
@@ -151,7 +148,7 @@ python f_train2.py --dataset msl --runs 10
 
 ## Results
 
-### Graph Anormaly Detection Result
+### Graph Anomaly Detection Results
 
 | Model | Amazon F1-m | YelpChi F1-m | T-Finance F1-m | T-Social F1-m |
 |-------|------:|------:|------:|------:|
@@ -165,7 +162,12 @@ python f_train2.py --dataset msl --runs 10
 ## Citation
 
 ```bibtex
-@inproceedings{
+@inproceedings{liu2026spectral,
+  title     = {Modeling Spectral Energy Shifts in Spatio-Temporal Graph Anomaly Detection},
+  author    = {Liu, Yilin and Zhang, Hongchao and Taha, Ahmad F. and Johnson, Taylor T. and Ma, Meiyi},
+  booktitle = {Proceedings of the 43rd International Conference on Machine Learning (ICML)},
+  year      = {2026}
+  % TODO: add pages and publisher = {PMLR} once proceedings are assigned
 }
 ```
 
